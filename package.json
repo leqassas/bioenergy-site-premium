@@ -1,0 +1,28 @@
+{
+  "name": "bioenergy-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "eslint-config-next": "^14.2.13",
+    "framer-motion": "^10.12.2",
+    "hamburger-react": "^2.5.0",
+    "next": "^14.2.13",
+    "react": "^18.3.1",
+    "react-countup": "^6.4.2",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.45.2",
+    "react-icons": "^4.8.0",
+    "react-type-animation": "^3.2.0",
+    "swiper": "^9.3.2"
+  }
+}
