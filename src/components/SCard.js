@@ -55,7 +55,7 @@ export default function SCard({ img, head, btn, type, text, link }) {
               variant={"unstyled"}
               color="white"
               _hover={{
-                color: "prim",
+                color: "prim2",
               }}
             >
               Learn More

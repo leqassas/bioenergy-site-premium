@@ -215,7 +215,7 @@ export default function Hero({ page, bg, heading, text }) {
               }}
             >
               <Fact
-                img={"toxic-waste 1.svg"}
+                img={"bolt 1.svg"}
                 count={
                   isInView &&
                   result.energy && (
@@ -228,7 +228,7 @@ export default function Hero({ page, bg, heading, text }) {
                 text={<>Energy generated</>}
               />
               <Fact
-                img={"bolt 1.svg"}
+                img={"toxic-waste 1.svg"}
                 count={
                   isInView &&
                   result.waste && (

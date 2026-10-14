@@ -41,7 +41,7 @@ export default function People() {
         <Card
           img={"../../team/magdy.webp"}
           heading={"Ahmed Magdi"}
-          text={"Business Development Manager"}
+          text={"Business Development Manager"}
         />
         <Card
           heading={"Ahmed El-prince"}
@@ -57,7 +57,7 @@ export default function People() {
         <Card
           img={"../../team/seif.webp"}
           heading={"Seif Hamdi"}
-          text={" Commercial Manager"}
+          text={"Commercial Manager"}
         />
         {/* <Card
           img={"../team/tala.webp"}

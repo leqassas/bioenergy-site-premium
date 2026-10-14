@@ -71,7 +71,7 @@ export default function Nav() {
     >
       <Box as={NextLink} href={"/"} w="full" maxW="15rem">
         <Image
-          src="../logow.svg"
+          src="/logow.svg"
           w="full"
           alt="logo"
           maxW={["7.75rem", "7.75rem", "10.75rem", "10.75rem"]}
@@ -368,7 +368,7 @@ export default function Nav() {
         </>
       ) : (
         <>
-          <HStack display={!isNotMobile ? "none" : "block"}>
+          <HStack spacing="1.5rem">
             <Button
               fontSize={"1rem"}
               fontWeight={"normal"}
@@ -376,7 +376,7 @@ export default function Nav() {
               variant="none"
               href="/"
               transition={"all 0.3s ease"}
-              _hover={{ color: "prim", transform: "translateY(-2px)" }}
+              _hover={{ color: "prim2", transform: "translateY(-2px)" }}
             >
               Home
             </Button>
@@ -388,7 +388,7 @@ export default function Nav() {
               href="/about"
               fontSize={"1rem"}
               transition={"all 0.3s ease"}
-              _hover={{ color: "prim", transform: "translateY(-2px)" }}
+              _hover={{ color: "prim2", transform: "translateY(-2px)" }}
             >
               About Us
             </Button>
@@ -401,7 +401,7 @@ export default function Nav() {
                 variant="none"
                 fontSize={"1rem"}
                 transition={"all 0.3s ease"}
-                _hover={{ color: "prim", transform: "translateY(-2px)" }}
+                _hover={{ color: "prim2", transform: "translateY(-2px)" }}
               >
                 Products
               </MenuButton>
@@ -435,7 +435,7 @@ export default function Nav() {
                 as={Button}
                 variant="none"
                 transition={"all 0.3s ease"}
-                _hover={{ color: "prim", transform: "translateY(-2px)" }}
+                _hover={{ color: "prim2", transform: "translateY(-2px)" }}
               >
                 Services
               </MenuButton>
@@ -463,18 +463,6 @@ export default function Nav() {
                 </MenuItem>
               </MenuList>
             </Menu>
-            {/* <Button
-              m="0"
-              fontWeight={"normal"}
-              as={NextLink}
-              variant="none"
-              href="/why"
-              fontSize={"1rem"}
-              transition={"all 0.3s ease"}
-              _hover={{ color: "prim", transform: "translateY(-2px)" }}
-            >
-              Why Us?
-            </Button> */}
             <Button
               m="0"
               fontWeight={"normal"}
@@ -483,12 +471,12 @@ export default function Nav() {
               href="/projects"
               fontSize={"1rem"}
               transition={"all 0.3s ease"}
-              _hover={{ color: "prim", transform: "translateY(-2px)" }}
+              _hover={{ color: "prim2", transform: "translateY(-2px)" }}
             >
               Projects
             </Button>
           </HStack>
-          <Flex w="full" maxW="15rem" align={"center"} justify={"center"}>
+          <Flex w="full" maxW="15rem" align={"center"} justify={"flex-end"} gap="1rem">
             <Button
               m="0"
               fontWeight={"normal"}
@@ -497,17 +485,19 @@ export default function Nav() {
               href="/contact"
               fontSize={"1rem"}
               transition={"all 0.3s ease"}
-              _hover={{ color: "prim", transform: "translateY(-2px)" }}
+              _hover={{ color: "prim2", transform: "translateY(-2px)" }}
             >
               Contact Us
             </Button>
             <IconButton
-              size={"lg"}
+              size={"md"}
               variant="ghost"
               color={"white"}
               rounded={"full"}
               _hover={{
-                background: "blue.200",
+                background: "whiteAlpha.300",
+                color: "prim2",
+                transform: "scale(1.05)",
               }}
               colorScheme="whiteAlpha"
               as={NextLink}
@@ -515,7 +505,9 @@ export default function Nav() {
               href={
                 "https://www.linkedin.com/company/bioenergy-for-alternative-fuel"
               }
+              target="_blank"
               icon={<SiLinkedin />}
+              aria-label="LinkedIn"
             />
           </Flex>
         </>

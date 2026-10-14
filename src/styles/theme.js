@@ -1,5 +1,4 @@
 import { extendTheme } from "@chakra-ui/react";
-import { BiFontFamily } from "react-icons/bi";
 
 const stylesTheme = {
   colors: {
@@ -19,7 +18,7 @@ const stylesTheme = {
   styles: {
     global: (props) => ({
       "html, body": {
-        postion: "relative",
+        position: "relative",
         fontSize: "16px",
         overflowX: "hidden",
         color: "textPrim",

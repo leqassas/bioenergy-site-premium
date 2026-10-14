@@ -13,36 +13,32 @@ export default function GreenHands() {
       w="full"
       minH="32.5rem"
     >
-      <Center bg="#1E471799" px={"1.2rem"} py="5rem" w="full" minH="32.5rem">
-        <Box textAlign={"center"} margin="0 auto" width={"min-content"}>
+      <Center bg="#1E471799" px={["1.5rem", "3rem", "6rem"]} py="5rem" w="full" minH="32.5rem">
+        <Box textAlign={"center"} margin="0 auto" w="full" maxW="55rem">
           <Heading
             fontWeight={"700"}
             color="white"
             letterSpacing={"normal"}
             w="full"
-            pb={["1rem", "1.5rem", "1.5rem", "1.5rem", "3.12rem"]}
+            pb={["1rem", "1.5rem", "1.5rem", "1.5rem", "2rem"]}
             fontFamily={poppins.style.fontFamily}
-            fontSize={["3rem", "3.5rem", "3.5rem", "5.5rem", "6rem"]}
-            whiteSpace={["pre", "pre", "pre", "pre", "nowrap"]}
+            fontSize={["2.5rem", "3rem", "3.5rem", "4.5rem", "5rem"]}
+            lineHeight={"1.15"}
           >
             You’ll be in{" "}
             <chakra.span color="#91C888">
-              {"\n"}
               green
             </chakra.span>{" "}
             hands.
           </Heading>
 
           <Text
-            fontSize={["1rem", "1.2rem", "1.2rem", "1.5rem", "2.25rem"]}
+            fontSize={["1rem", "1.2rem", "1.2rem", "1.5rem", "1.75rem"]}
             fontWeight={"400"}
             color="white"
-            textAlign={"justify"}
-            letterSpacing={"2px"}
+            textAlign={"center"}
+            letterSpacing={"1px"}
             w="full"
-            sx={{
-              textAlignLast: "center",
-            }}
             fontFamily={poppins.style.fontFamily}
           >
             {"More than a decade of experience in global waste markets."}

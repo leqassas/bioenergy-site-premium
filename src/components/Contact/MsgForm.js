@@ -184,7 +184,7 @@ export default function MsgForm() {
           <InputGroup>
             <Input
               id="phone"
-              type="number"
+              type="tel"
               size="md"
               rounded="2rem"
               borderColor="#E2E1E3"
@@ -227,7 +227,7 @@ export default function MsgForm() {
                   message: "Minimum length should be 4",
                 },
                 pattern: {
-                  value: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
+                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                   message: "Email address must be a valid address",
                 },
               })}
@@ -249,7 +249,7 @@ export default function MsgForm() {
             py="1.25rem"
             px="1.88rem"
             _hover={{
-              borderRadius: "gray.300",
+              borderColor: "gray.400",
             }}
             placeholder="Your Message"
             {...register("msg", {
@@ -265,7 +265,7 @@ export default function MsgForm() {
             {errors.msg && errors.msg.message}
           </FormErrorMessage>
         </FormControl>
-        <FormControl float="right">
+        <Flex w="full" justify="flex-end">
           <Button
             h={"3.125rem"}
             w="full"
@@ -282,7 +282,7 @@ export default function MsgForm() {
           >
             Submit
           </Button>
-        </FormControl>
+        </Flex>
         <VStack w="full" spacing={"1rem"}>
           <HStack w="full" spacing={"1.7rem"}>
             <Divider borderColor={"text"} />

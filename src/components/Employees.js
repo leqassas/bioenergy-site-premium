@@ -32,7 +32,7 @@ export default function Employees() {
       <Flex
         alignItems={"center"}
         justifyContent={"center"}
-        flexWrap={["wrap", "wrap", "wrap", "nowrap"]}
+        flexWrap={"wrap"}
         w="full"
         gap="2rem"
       >

@@ -317,8 +317,8 @@ export default function History() {
           >
             Bio Energy was founded in Egypt as a direct response to a problem
             encountered by the country in 2013, due to the rising of the
-            economic crisis and the the law that states no fuel subsidies for
-            the Energy Intensive Industries. The massive increase of the cost pf
+            economic crisis and the law that states no fuel subsidies for
+            the Energy Intensive Industries. The massive increase of the cost of
             production of 150% was the start of new adaptive strategy of the
             cement industry to cope up with the situation.
           </Text>
@@ -378,7 +378,7 @@ export default function History() {
               <SwiperSlide key={i.year}>
                 <YearComponent
                   year={i.year}
-                  reversed={index % 2 != 0 ? true : false}
+                  reversed={isNotMobile && index % 2 !== 0}
                   desc={i.text}
                 />
               </SwiperSlide>

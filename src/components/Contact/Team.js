@@ -30,13 +30,15 @@ export default function Team() {
       >
         Reach out to our Business Development Manager:
       </Heading>
-      <chakra.NextLink
+      <Link
         as={NextLink}
         color="white"
         href="mailto:Ahmed.magdy@bioenergyegy.com"
-        fontSize={["1rem", "1.2rem", "2.5rem"]}
+        fontSize={["1.1rem", "1.4rem", "2rem", "2.5rem"]}
         fontWeight={"700"}
         pos={"relative"}
+        wordBreak={"break-word"}
+        textAlign={"center"}
         transition={"all 0.3s ease"}
         _before={{
           content: "''",
@@ -59,7 +61,7 @@ export default function Team() {
         }}
       >
         Ahmed.magdy@bioenergyegy.com
-      </chakra.NextLink>
+      </Link>
     </VStack>
   );
 }

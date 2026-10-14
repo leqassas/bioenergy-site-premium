@@ -129,7 +129,7 @@ export default function Aboutus() {
             fontWeight={"400"}
             color={"text"}
           >
-            That’s why focus on making a positive impact on the planet and
+            That’s why we focus on making a positive impact on the planet and
             places we call home.
           </Text>
         </VStack>

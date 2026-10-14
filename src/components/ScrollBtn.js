@@ -18,28 +18,32 @@ export default function ScrollBtn() {
       const scrolled = document.documentElement.scrollTop;
       if (scrolled > 300) {
         setVisible(true);
-      } else if (scrolled <= 300) {
+      } else {
         setVisible(false);
       }
     };
     window.addEventListener("scroll", toggleVisible);
+    return () => window.removeEventListener("scroll", toggleVisible);
   }, []);
 
   return (
     <IconButton
+      aria-label="Scroll to top"
       isActive={false}
       onClick={scrollToTop}
-      border={'2px solid white'}
+      border={"2px solid white"}
       icon={<BiUpArrow />}
       rounded="full"
       color="white"
-      _hover={{ opacity: "0.7" }}
+      _hover={{ opacity: "0.8", transform: "scale(1.1)" }}
       bgColor="prim"
       pos={"fixed"}
       zIndex={"tooltip"}
-      bottom={"3rem"}
-      right={"3rem"}
-      visibility={!visible && "hidden"}
+      bottom={["1.5rem", "2rem", "3rem"]}
+      right={["1.5rem", "2rem", "3rem"]}
+      opacity={visible ? 1 : 0}
+      pointerEvents={visible ? "auto" : "none"}
+      transition="all 0.3s ease"
     />
   );
 }

@@ -45,7 +45,7 @@ export default function Card({ img, bg, heading, text, email, link }) {
       <VStack align={link ? "start" : "center"} spacing={"0.5rem"}>
         <Heading
           fontSize={link ? "1.4rem" : "1.75rem"}
-          textAlign={"center"}
+          textAlign={link ? "left" : "center"}
           fontWeight={"700"}
         >
           {heading}

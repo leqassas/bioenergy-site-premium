@@ -49,18 +49,17 @@ export default function Partners() {
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
         >
-          <Box maxW="250px">
-            <Image src="alternative/Cemex_logo.svg" alt="partners" />
+          <Box maxW="220px">
+            <Image src="/alternative/Cemex_logo.svg" alt="Cemex" objectFit="contain" />
           </Box>
-          <Box maxW="250px">
-            <Image src="alternative/HeidelbergCement_Logo.svg" alt="partners" />
+          <Box maxW="220px">
+            <Image src="/alternative/HeidelbergCement_Logo.svg" alt="Heidelberg Cement" objectFit="contain" />
           </Box>
-          <Box maxW="250px">
-            <Image src="alternative/lafarge-egypt.svg" alt="partners" />
+          <Box maxW="220px">
+            <Image src="/alternative/lafarge-egypt.svg" alt="Lafarge Egypt" objectFit="contain" />
           </Box>
-
-          <Box maxW="250px">
-            <Image src="alternative/logo.png" alt="partners" />
+          <Box maxW="220px">
+            <Image src="/alternative/logo.png" alt="Alternative partner logo" objectFit="contain" />
           </Box>
         </MBox>
       </VStack>
@@ -105,20 +104,22 @@ export default function Partners() {
           transition={{ duration: 0.4 }}
         >
           <Box maxW="150px">
-            <Image src="zero/froneri-ice-cream.svg" alt="partners" />
+            <Image src="/zero/froneri-ice-cream.svg" alt="Froneri" objectFit="contain" />
           </Box>
           <Box maxW="150px">
-            <Image src="zero/mars-inc.svg" alt="partners" />
+            <Image src="/zero/mars-inc.svg" alt="Mars" objectFit="contain" />
           </Box>
           <Box maxW="150px">
-            <Image src="zero/nestle.svg" alt="partners" />
-          </Box>
-          <Image src="zero/P&G_Logo_SVG.svg" alt="partners" maxW="150px" />
-          <Box maxW="150px">
-            <Image src="zero/scib-paints-logo.jpg" alt="partners" />
+            <Image src="/zero/nestle.svg" alt="Nestle" objectFit="contain" />
           </Box>
           <Box maxW="150px">
-            <Image src="zero/unilever.svg" alt="partners" />
+            <Image src="/zero/P&G_Logo_SVG.svg" alt="P&G" objectFit="contain" />
+          </Box>
+          <Box maxW="150px">
+            <Image src="/zero/scib-paints-logo.jpg" alt="Scib Paints" objectFit="contain" />
+          </Box>
+          <Box maxW="150px">
+            <Image src="/zero/unilever.svg" alt="Unilever" objectFit="contain" />
           </Box>
         </MBox>
       </VStack>

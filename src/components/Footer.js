@@ -73,7 +73,7 @@ export default function LargeWithLogoCentered() {
       {/*footer*/}
       <Center bg="prim" color="white" flexDir={"column"} w="full">
         <Center
-          px={["1.2rem", "1.75rem", "3.75rem", "3.75rem", "3.75rem", "7.4rem"]}
+          px={["1.5rem", "3rem", "6rem"]}
           py="5.25rem"
           w="full"
         >
@@ -93,7 +93,7 @@ export default function LargeWithLogoCentered() {
               maxW="26.5rem"
             >
               <Image
-                src="../logow.svg"
+                src="/logow.svg"
                 alt="logo"
                 w="full"
                 pos="relative"
@@ -127,7 +127,8 @@ export default function LargeWithLogoCentered() {
               justifyContent={"space-between"}
               w="full"
               maxW="26.5rem"
-              h="13.75rem"
+              minH={["auto", "auto", "13.75rem"]}
+              spacing={["1.5rem", "1.5rem", "0"]}
             >
               <Heading
                 fontSize={"1.7rem"}
@@ -157,7 +158,8 @@ export default function LargeWithLogoCentered() {
               justifyContent={"space-between"}
               w="full"
               maxW="26.5rem"
-              h="13.75rem"
+              minH={["auto", "auto", "13.75rem"]}
+              spacing={["1.5rem", "1.5rem", "0"]}
               as="form"
               onSubmit={handleSubmit(onSubmit)}
               ref={formRef3}
@@ -175,9 +177,11 @@ export default function LargeWithLogoCentered() {
               </Text>
               <FormControl
                 display={"flex"}
+                flexDir={["column", "row"]}
                 gap="1rem"
                 alignItems={"center"}
                 justifyContent={"center"}
+                w="full"
               >
                 <Input
                   type="email"
@@ -199,6 +203,7 @@ export default function LargeWithLogoCentered() {
                   borderColor="prim2"
                   borderWidth="3px"
                   h="3.125rem"
+                  w="full"
                 />
                 <Button
                   p="0.875rem 2.625rem"
@@ -206,6 +211,7 @@ export default function LargeWithLogoCentered() {
                   bg="prim2"
                   isLoading={isSubmitting}
                   h="3.125rem"
+                  w={["full", "auto"]}
                   type="submit"
                   color="textPrim"
                   rounded={"full"}

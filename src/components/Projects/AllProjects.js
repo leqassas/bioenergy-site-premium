@@ -98,6 +98,7 @@ export default function AllProjects() {
             maxW="31.625rem"
             w="full"
             h="19rem"
+            objectFit="cover"
           />
           <Image
             alt="Abiis Facility (Nahdet Misr)"
@@ -106,6 +107,7 @@ export default function AllProjects() {
             w="full"
             maxW="31.625rem"
             h="19rem"
+            objectFit="cover"
           />
           <Image
             alt="Abiis Facility (Nahdet Misr)"
@@ -114,6 +116,7 @@ export default function AllProjects() {
             w="full"
             maxW="31.625rem"
             h="19rem"
+            objectFit="cover"
           />
         </Flex>
         <List spacing={"3.12rem"} w="full">
@@ -158,7 +161,7 @@ export default function AllProjects() {
           alt="El-Edwa waste management facility"
           src="../../projects/Minya Plant.jpg"
           rounded="0.625rem"
-          h="32rem"
+          h={["16rem", "20rem", "28rem", "32rem"]}
           objectFit="cover"
         />
         <List spacing={"3.12rem"} w="full">
@@ -186,7 +189,7 @@ export default function AllProjects() {
           alt="Kattameya Plant"
           src="../../projects/Kattameya Plant.jpg"
           rounded="0.625rem"
-          h="32rem"
+          h={["16rem", "20rem", "28rem", "32rem"]}
           objectFit="cover"
         />
         <List spacing={"3.12rem"} w="full">

@@ -10,7 +10,7 @@ export default function Companies() {
       bgSize={"cover"}
       bgRepeat={"no-repeat"}
     >
-      <VStack bg="#1E4717B2" spacing="3.12rem" w="full" px={"1.2rem"} py="5rem">
+      <VStack bg="#1E4717B2" spacing="3.12rem" w="full" px={["1.5rem", "3rem", "6rem"]} py="5rem">
         <VStack spacing={"1.25rem"}>
           <Heading
             fontSize={"2rem"}
@@ -40,14 +40,14 @@ export default function Companies() {
           flexWrap={"wrap"}
         >
           <Image
-            alt="the green innovtion"
-            src="../tgi-w.svg"
+            alt="the green innovation"
+            src="/tgi-w.svg"
             w="full"
             maxW="22.5rem"
           />
           <Image
             alt="estidama"
-            src="../estidama-w.svg"
+            src="/estidama-w.svg"
             w="full"
             maxW="22.5rem"
           />

@@ -76,7 +76,17 @@ export default function PS() {
         </Flex> */}
         <ChakraSwiper
           modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-          slidesPerView={isNotMobile ? 3 : 1}
+          slidesPerView={1}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1150: {
+              slidesPerView: 3,
+              spaceBetween: 25,
+            },
+          }}
           pagination={{ clickable: true }}
           navigation
           py="3.12rem"
@@ -169,7 +179,17 @@ export default function PS() {
         </VStack>
         <ChakraSwiper
           modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-          slidesPerView={isNotMobile ? 3 : 1}
+          slidesPerView={1}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1150: {
+              slidesPerView: 3,
+              spaceBetween: 25,
+            },
+          }}
           pagination={{ clickable: true }}
           navigation
           py="3.12rem"
@@ -201,16 +221,16 @@ export default function PS() {
             <SCard
               type="slide"
               img={"../serv/tech-min.webp"}
-              head={"Technical Consultancy for AFR buisnesses"}
-              link={"services/#afr"}
+              head={"Technical Consultancy for AFR businesses"}
+              link={"/services/#afr"}
             />
           </SwiperSlide>
           <SwiperSlide>
             <SCard
               type="slide"
               img={"../serv/turnkey-min.webp"}
-              head={"Turnkey Alternative Fuel Facilty"}
-              link={"services/#turnkey"}
+              head={"Turnkey Alternative Fuel Facility"}
+              link={"/services/#turnkey"}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -234,7 +254,7 @@ export default function PS() {
               type="slide"
               img={"../serv/operation-land-min.webp"}
               head={"Operation and Maintenance of Landfills"}
-              link={"services/#landfills"}
+              link={"/services/#landfills"}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -242,7 +262,7 @@ export default function PS() {
               type="slide"
               img={"../serv/operation-plants-min.webp"}
               head={"Operation and Maintenance of Waste management plants"}
-              link={"services/#plants"}
+              link={"/services/#plants"}
             />
           </SwiperSlide>
         </ChakraSwiper>

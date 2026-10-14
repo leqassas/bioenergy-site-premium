@@ -190,7 +190,7 @@ export default function JoinForm() {
                     message: "Minimum length should be 4",
                   },
                   pattern: {
-                    value: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                     message: "Email address must be a valid address",
                   },
                 })}
@@ -233,7 +233,7 @@ export default function JoinForm() {
           <InputGroup>
             <Input
               id="phone"
-              type="number"
+              type="tel"
               borderColor="#E2E1E3"
               borderWidth={"2px"}
               size="md"
@@ -269,6 +269,9 @@ export default function JoinForm() {
             rounded="1.875rem"
             py="1.25rem"
             px="1.88rem"
+            _hover={{
+              borderColor: "gray.400",
+            }}
             placeholder="Your Message"
             {...register("msg", {
               required: "Can't be empty",
@@ -283,7 +286,7 @@ export default function JoinForm() {
             {errors.msg && errors.msg.message}
           </FormErrorMessage>
         </FormControl>
-        <FormControl float="right">
+        <Flex w="full" justify="flex-end">
           <Button
             h={"3.125rem"}
             w="full"
@@ -300,7 +303,7 @@ export default function JoinForm() {
           >
             Send Request
           </Button>
-        </FormControl>
+        </Flex>
       </VStack>
     </VStack>
   );
